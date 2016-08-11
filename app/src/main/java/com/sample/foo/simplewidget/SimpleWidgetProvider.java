@@ -19,7 +19,7 @@ public class SimpleWidgetProvider extends AppWidgetProvider {
         for (int i = 0; i < count; i++) {
             int widgetId = appWidgetIds[i];
             String number = String.format("%03d", (new Random().nextInt(900) + 100));
-
+            /*http://en.wiktionary.org/w/index.php?title=overflow&action=raw*/
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
                     R.layout.simple_widget);
             remoteViews.setTextViewText(R.id.textView, number);
